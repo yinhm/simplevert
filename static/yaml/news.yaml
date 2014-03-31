@@ -1,3 +1,9 @@
+- title: ~12 minutes of downtime last night
+  date: 3/31/2014
+  body: |
+    Last night we had a minor issue with our queueing server that caused work to
+    be lost for about 12 minutes (~4:17-4:29 GMT) while we patched it live. We've 
+    fixed the issue and do not expect it to be a problem in the future.
 - title: Simple Vert Launch!
   date: 3/29/2014
   body: |
