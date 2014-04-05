@@ -1,3 +1,11 @@
+- title: Vardiff lives!
+  date: 4/5/2014
+  body: |
+      I know a lot of people have been asking and it's finally here! Apologies
+      for the delays, but we wanted to make sure we didn't release something
+      subpar. You can connect to the vardiff server on port 3344 instead of
+      3343.
+      <pre>stratum+tcp://stratum.simplevert.com:3344</pre>
 - title: Stats upgrade pt.2
   date: 4/5/2014
   body: |
