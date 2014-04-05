@@ -1,3 +1,9 @@
+- title: Stats upgrade pt.2
+  date: 4/5/2014
+  body: |
+    If you're using PPAgent you can now view historical graphs of temperature and actual hashrate.
+    We will be tweaking them a bit for the next while. Let us know if there's other stats you'd
+    like to see graphed!
 - title: Stats upgrade pt.1
   date: 4/1/2014
   body: |
