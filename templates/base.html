@@ -177,10 +177,10 @@
           {# Links to other simple pools #}
           <ul class="nav navbar-nav pull-right hidden-xs">
             <li{% if active_site == "Doge" %} class="active"{% endif %}>
-              <a href="http://www.simpledoge.com"><img class="too-damn-bright" src="/static/img/dogecoin.png" style="width:20px;"></a>
+              <a href="http://www.simpledoge.com"><img class="too-damn-bright" src="{{ config['assets_address'] | safe }}/img/dogecoin.png" style="width:20px;"></a>
             </li>
             <li{% if active_site == "Vert" %} class="active"{% endif %}>
-              <a href="http://www.simplevert.com"><img class="too-damn-bright" src="/static/img/vertcoin.png" style="width:20px;"></a>
+              <a href="http://www.simplevert.com"><img class="too-damn-bright" src="{{ config['assets_address'] | safe }}/img/vertcoin.png" style="width:20px;"></a>
             </li>
           </ul>
         </div>
