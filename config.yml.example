@@ -122,7 +122,8 @@ site_url: simplevert.com
 repopath: https://github.com/simplecrypto/simplevert/commit/
 # the block reward. Used to calculate averages, etc
 reward: 50
-# the expected time for the network to find a block in seconds
+# the expected time for the network to find a block in seconds. used for
+# computing network hashrate
 block_time: 150
 # the colloquial name of the coin
 coin_name: Vert
