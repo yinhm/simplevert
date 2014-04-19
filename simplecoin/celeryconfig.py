@@ -9,7 +9,7 @@ caching_tasks = {
     },
     'compute_pplns': {
         'task': 'simplecoin.tasks.update_pplns_est',
-        'schedule': timedelta(minutes=15)
+        'schedule': timedelta(minutes=18)
     },
     'update_online_workers': {
         'task': 'simplecoin.tasks.update_online_workers',
