@@ -1,3 +1,20 @@
+- title: New updates to the site
+  date: 4/26/2014
+  body: |
+      Today we're glad to announce the release of v0.6 of our SimpleCoin software.
+      This includes the following interface improvements:
+      <ul><li>Sorting for all tables on the site. Just click the headers to sort by that column.</li>
+          <li>Prioritized recently visited stats. The addresses you visit the most often will naturally be at the top of the list.</li>
+          <li>See orphan percentage, effective payout/MH/day, and all time luck on pool stats</li>
+          <li>View the networks difficulty/hashrate over time in our new Network Stats. Note that we're still smoothing out the kinks, so some things may be a bit off.</li>
+          <li>See all transactions for your address, instead of just the last 20</li>
+          <li>Set a donation amount that is isn't a whole number, like 1.5%</li>
+      </ul>
+      In addition to these frontend improvements there were numerous backend
+      improvements that should help keep our site running quickly. There may 
+      still be a few lingering bugs here and there that we'll be working to
+      fix in the next couple days. Let us know on IRC if you see anything that
+      looks off.
 - title: Minor vardiff bug causing false rejects
   date: 4/15/2014
   body: |
