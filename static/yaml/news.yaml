@@ -1,3 +1,19 @@
+- title: Simple Vert is adding support for merged mining Monocle(MON) coin
+  date: 4/29/2014
+  body: |
+      After weighing the pros and cons, we've decided to add support for merged mining
+      to our pool software. AFAIK, this will make us the only non-p2pool to support
+      mergemining Monocle coin at this
+      time(<a href="https://bitcointalk.org/index.php?topic=585817">read more about MON</a>).
+      <br><p>
+      Unfortunately this is a non-trivial change to the backend,
+      and will require pretty thorough testing before we're comfortable running it in production. Because of that, we aren't
+      ready to commit to a specific completion date. A reasonable guess is sometime after the weekend, but it could
+      take a lot longer(or a lot shorter) depending on how many problems we hit.
+      <br><p>
+      Once we're up and running you'll need to add a Monocle address to start recieving payouts.
+      We'll have more information on this as we get closer, but it'll be very similar to the process used to change
+      your fee amount, and will require signing a message with your wallet client.
 - title: New updates to the site
   date: 4/26/2014
   body: |
