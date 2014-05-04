@@ -108,6 +108,29 @@ def confirm_trans(transaction_id):
 
 
 @manager.command
+def fix_block_records():
+
+    from sqlalchemy.sql import func
+    from simplecoin.models import Share
+    blocks = Block.query.filter_by(merged=True).order_by(Block.found_at)
+    # move up the list oldest to newest
+    last = None
+    for blk in blocks:
+        if last:
+            current_app.logger.info("Blk {}; last_share_id: {}; prev_last_share_id: {}"
+                                    .format(blk.height, blk.last_share_id, last.last_share_id))
+            shares = (db.session.query(func.sum(Share.shares)).
+                      filter(Share.id < blk.last_share_id).filter(Share.id > last.last_share_id).scalar())
+            current_app.logger.info("Shares to solve computed: {}"
+                                    .format(shares))
+            # last share id of the last block vs the current block...
+            blk.shares_to_solve = shares
+            blk.time_started = last.found_at
+        last = blk
+    db.session.commit()
+
+
+@manager.command
 def reload_cached():
     """ Recomputes all the cached values that normally get refreshed by tasks.
     Good to run if celery has been down, site just setup, etc. """
