@@ -127,7 +127,7 @@ class Block(base):
     @property
     def confirms_remaining(self):
         bh = cache.get('blockheight')
-        if not bh:
+        if not bh or self.merged:
             return None
         confirms_req = current_app.config['block_mature_confirms']
         # prevent displaying negative confirms
