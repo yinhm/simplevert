@@ -1,3 +1,27 @@
+- title: Merged Mining with Monocle Coin Running Solid
+  date: 5/4/2014
+  body: |
+    <p>We've been closely monitoring the merged mining, and it seems to be
+    running smoothly. At this point we're basically just adding more stats,
+    and fixing a couple last bugs. There will likely be a couple of quick restarts
+    of the stratum server(basically everyone gets disconnected for a second)
+    over the next few days to smooth out the remaining bugs.</p>
+
+    <p>Tonight we've reset the stratum to fix a bug causing worker count to be too 
+    high. So don't be alarmed if you notice that the worker count has 'dropped' a lot,
+    its just being actually accurately represented. We're also changing 
+    user stats Rejected 24hr shares to only show shares rejected as stale. 
+    We have several users who are submitting quite a few duplicate and low diff shares, 
+    and we don't think this is representative of their actual efficiency stats.</p>
+
+    <p>Also, in case you hadn't seen this information elsewhere here's what you
+    need to know about our new MON merged mining support</p>
+    <ul>
+        <li>You don't need to change your miners configs at all, they're already mining MON as well as VTC.</li>
+        <li>To recieve the MON that you helped mine you'll need to sign a message with your Vertcoin wallet. Click the edit button right under your Vertcoin address on your stats page to do this.</li>
+        <li>MON payouts happen about every 6 hours right now. We're doing them by hand at the moment, but they will be automated soon.</li>
+        <li>As of now a <b>10% bonus</b> is being added to all MON payouts!</li>
+    </ul>
 - title: Simple Vert is adding support for merged mining Monocle(MON) coin
   date: 4/29/2014
   body: |
