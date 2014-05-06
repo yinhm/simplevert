@@ -1,3 +1,18 @@
+- title: A few recent and upcoming changes
+  date: 5/5/2014
+  body: |
+    <p>We've adjusted Vertcoin payouts to run every 4 hours instead of every block. With our
+    recent growth many smaller miners were getting spammed with essentially dust transactions. Overall
+    feedback on this has been positive, but feel free to drop in IRC if you have questions/concerns.</p>
+    
+    <p>We recently rebooted the stratum server (downtime ~10seconds) to fix few things for a few of our spammier
+    miners, one of those changes included increasing the fixed difficulty to 64. This won't change
+    your payout, but may make your graphs a bit spikier if you are a smaller miner. If it bothers
+    you feel free to try out our vardiff port :3344</p>
+    
+    <p>In the next few days we'll be automating Monocle payouts, they will probably run on the same
+    schedule as VTC. We've also started work on adding merged mining for Parallax coin, but we're not
+    ready to commit to a date/time just yet.</p>
 - title: Merged Mining with Monocle Coin Running Solid
   date: 5/4/2014
   body: |
