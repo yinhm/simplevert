@@ -1,3 +1,15 @@
+- title: Simple Vert is adding support for merged mining Parallax(PLX) coin alongside MON and VTC
+  date: 5/7/2014
+  body: |
+      <p>Since we've been getting a ton of questions about it, this is just a heads up that we are going
+      to be adding PLX as an additional merge mined coin. This means if you're mining with us you'll be
+      basically triple mining (VTC, MON, as well as PLX). We are currently testing the code to run it, 
+      and we'll likely have an alpha out for you guys sometime tomorrow or Friday.</p>
+      
+      <p>This process will go very similar to how it went when we added MON. Basically you'll have to
+      add a PLX address to recieve credit for your merged mining, this will be done via a link on 
+      your user stats page. For the initial release we may or may not have block/payout stats available for 
+      you immediately, our focus is on getting it running first, and then displaying it nicely.</p>
 - title: A few recent and upcoming changes
   date: 5/5/2014
   body: |
