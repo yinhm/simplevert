@@ -1,3 +1,17 @@
+- title: Merged mining stratum upgrades
+  date: 5/8/2014
+  body: |
+      <p>We've made several changes to the way our stratum servers handle merged mining, they were 
+      previously requesting work restarts far too frequently to include updated information from the merge mined
+      block chains. Our changes appears to have improved efficiency for most miners by a noticable amount,
+      but will result in a small(~2%) increase in orphans on merge mined coins.</p>
+      
+      <p>We have had to further reduced the MON bonus, its now at 2.5%. Nearly everyone has added
+      a MON address! Additionally, with the stratum upgrades behind us we are still on track for an alpha
+      release of triple merged mining late Thursday or Friday if everything goes well, but we are thoroughly
+      testing everything as we go, and its not unreasonable that we will hit a snag, and won't be done until 
+      the weekend.</p>
+- title: A few recent and upcoming changes
 - title: Simple Vert is adding support for merged mining Parallax(PLX) coin alongside MON and VTC
   date: 5/7/2014
   body: |
