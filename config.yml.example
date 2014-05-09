@@ -167,7 +167,8 @@ leader-xs: "static/img/whale-xs.png"
 # sm leader img
 leader-sm: "static/img/whale-sm.png"
 # fullsize leader img
-leader: "static/img/whale.png"
+# URL for chat, if commented out chat link will not show
+chat_url: https://kiwiirc.com/client/irc.freenode.net/#simplecrypto
 # this url will have the transaction id appended to it to provide
 # information on a specific transaction for a payout
 transaction_link_prefix: http://vertexplorer.com/tx/
