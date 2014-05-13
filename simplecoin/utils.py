@@ -25,17 +25,15 @@ def all_blocks(merged_type=None):
     return (db.session.query(Block).filter_by(merged_type=merged_type).
             order_by(Block.height.desc()).all())
 
-@cache.cached(timeout=3600, key_prefix='users_solved_blocks')
-def users_blocks(address):
-    return db.session.query(Block).filter_by(user=address).count()
+@cache.memoize(timeout=3600)
+def users_blocks(address, merged=None):
+    return db.session.query(Block).filter_by(user=address, merged_type=None).count()
 
-@cache.cached(timeout=86400, key_prefix='all_user_shares')
+
+@cache.memoize(timeout=86400)
 def all_time_shares(address):
     return db.session.query(OneHourShare).filter_by(user=address).all()
 
-@cache.cached(timeout=60, key_prefix='last_block_time')
-def last_block_time():
-    return last_block_time_nocache()
 
 @cache.memoize(timeout=60)
 def last_block_time(merged_type=None):
