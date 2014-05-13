@@ -1,3 +1,14 @@
+- title: Connectivity issues and new stratums
+  date: 5/11/2014
+  body: |
+      <p>As some of you noticed, we had some connectivity issues yesterday. One of the routers at our hosts datacenter
+      was experiencing packet loss causing some people to intermittently connect or be completely unable to connect. As
+      a remedy to this we are working on adding several new stratum servers, located in geographically different areas.
+      This should help mitigate connection issues, and decrease stale shares if you use a server closer to your location.</p>
+      
+      <p>We have added a high difficulty stratum, on port 3345, and are currently working to add 2 geographic servers, 
+      one in Singapore to serve Asia and Australia, and another in France to cover Europe.
+      We'll be working to get these servers setup this week, but it could take longer.</p>
 - title: Merged mining stratum upgrades
   date: 5/8/2014
   body: |
