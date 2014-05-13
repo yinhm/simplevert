@@ -37,7 +37,9 @@ $(document).ready(function() {
           <li>Configure your stratum client with the information below. Worker name can be anything you'd like:
             <small>
               <pre><b>URL: </b>stratum+tcp://{{ config['stratum_address'] }}
-<b>Port:</b> {{ config['stratum_port'] }}
+<b>Regular Port (64 diff):</b> {{ config['stratum_port'] }}
+<b>Vardiff Port (8 - 512 diff):</b> 3344
+<b>Highdiff Port (>8MH/s, 512 diff):</b> 3345
 <b>Username: </b>[Your wallet address].[Worker Name]
 <b>Password: </b>anything
 <b>cgminer example:</b> ./vertminer -o stratum+tcp://{{ config['stratum_address'] }}:{{ config['stratum_port'] }} -u {{ config['catchall_address'] }}.worker1 -p x -I 13</pre>
@@ -66,7 +68,7 @@ $(document).ready(function() {
             </form>
           </div>
           <li>(Optional) Setup advanced stats to track GPU temps and actual hashrate with
-            <a href="https://github.com/icook/ppagent">Powerpool Agent</a>
+            <a href="https://github.com/simplecrypto/ppagent">Powerpool Agent</a>
           </li>
           <li>(Optional) Setup your MON merged mining address by clicking the edit button on your stats page next to your Vertcoin address.</li>
         </ol>
@@ -117,7 +119,7 @@ $(document).ready(function() {
           and view actual data from each of your rigs, rather than approximations.</p>
           <ul>
             <li>Quick and easy setup, see the
-              <a href="http://www.github.com/icook/ppagent" target="_blank">Installation Guide</a>
+              <a href="http://www.github.com/simplecrypto/ppagent" target="_blank">Installation Guide</a>
             </li>
             <li>View stats from rigs remotely - including WUE, Hashrate, Temps, Fan %, and more</li>
             <li>Overheat/Low hashrate status indicators and email notifications</li>
