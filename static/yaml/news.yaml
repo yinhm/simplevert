@@ -1,3 +1,13 @@
+- title: Minor upgrades to the site
+  date: 5/14/2014
+  body: |
+      <p>Over the past day or two we've made several improvements to the site.</p>
+      <ul><li>Pagination on the All blocks and All transactions pages, they were getting too long.</li>
+          <li>User Stats now includes payout summaries for all merge mined currencies (MON and PLX).</li>
+          <li>User Stats now shows all time blocks solved, shares contributed, and 24 hour efficiency for all workers.</li>
+          <li>Network Stats shows network information for MON and PLX as well (no graphs quite yet...).</li>
+          <li>Small payout amounts now won't get rounded to 0.0, instead 2 significant figures will be show (tooltips show full unrounded amount)</li>
+      </ul>
 - title: Connectivity issues and new stratums
   date: 5/11/2014
   body: |
