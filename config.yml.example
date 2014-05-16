@@ -181,10 +181,53 @@ chat_url: https://kiwiirc.com/client/irc.freenode.net/#simplecrypto
 transaction_link_prefix: http://vertexplorer.com/tx/
 # just like above, but with a block
 block_link_prefix: http://vertexplorer.com/block/
-# stratum server address
-stratum_address: stratum.simplevert.com
-# stratum port
-stratum_port: 3343
+stratums:
+    - address: ca.simplevert.com
+      location_acronym: CA
+      location: Beauharnois, Canada
+      country_flag: "/img/ca.svg"
+      ports:
+          # List containing each open port on geo stratum
+          - port: 3343
+            diff: 64
+            title: Standard
+            pp_location: http://localhost:3856/
+          - port: 3344
+            diff: 8-512
+            title: Vardiff
+            pp_location: http://localhost:3856/
+          - port: 3345
+            diff: 512
+            title: Hidiff
+            pp_location: http://localhost:3856/
+    - address: gb.simplevert.com
+      location_acronym: GB
+      location: London, Great Britain
+      country_flag: "/img/gb.svg"
+      ports:
+          # List containing each open port on geo stratum
+          - port: 3343
+            diff: 64
+            title: Standard
+            pp_location: http://localhost:3856/
+          - port: 3345
+            diff: 512
+            title: Hidiff
+            pp_location: http://localhost:3856/
+    - address: jp.simplevert.com
+      location_acronym: JP
+      location: Tokyo, Japan
+      country_flag: "/img/jp.svg"
+      ports:
+          # List containing each open port on geo stratum
+          - port: 3343
+            diff: 64
+            title: Standard
+            pp_location: http://localhost:3856/
+          - port: 3345
+            diff: 512
+            title: Hidiff
+            pp_location: http://localhost:3856/
 # link to a good beginner guide
 beginner_guide: <a href="http://www.reddit.com/r/dogemining/wiki/index/mining_guide" target="_blank">Reddit</a>
 # how many previously solved blocks to show on the pool stats page. defaults to 25
