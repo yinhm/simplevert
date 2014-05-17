@@ -14,9 +14,12 @@
 
       <p>Tokyo - jp.simplevert.com</p>
       <ul>
-      <li>Standard Port: 3343 (diff 64)</li>
+      <li>Standard Port: 3343 (diff 128)</li>
       <li>Hidiff Port: 3345 (diff 512)</li>
       </ul>
+
+      <p>If you have more than 8MH we urge you to use the high difficulty port, you might accidentally get banned
+      by our anti-DOS measures otherwise.</p>
 
       <p>Due to the increased cost we're increasing the miniumum fee to 1%, this should give us a little breathing
       room to add on new hardware as necessary. If you'd like a server closer to your area, drop us a message.</p>
